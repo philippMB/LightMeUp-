@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SwiftSocket
 
 class ViewController: UIViewController {
     
@@ -45,6 +46,14 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let client = TCPClient(address: "192.168.0.11", port: 23916)
+        switch client.connect(timeout: 5){
+        case .success:
+            print("Connected")
+        default:
+            print("Could not connect to 23916")
+        }
         
         Light0.image = UIImage(named: "Light")
         Light1.image = UIImage(named: "Light")

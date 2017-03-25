@@ -12,6 +12,7 @@
 		17B869521E8440970032D0F0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17B869501E8440970032D0F0 /* Main.storyboard */; };
 		17B869541E8440970032D0F0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 17B869531E8440970032D0F0 /* Assets.xcassets */; };
 		17B869571E8440970032D0F0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17B869551E8440970032D0F0 /* LaunchScreen.storyboard */; };
+		D252522B57F84F456E0B5778 /* Pods_LightMeUp_.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC587904F8657E37EACA73FC /* Pods_LightMeUp_.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,9 @@
 		17B869531E8440970032D0F0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		17B869561E8440970032D0F0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		17B869581E8440970032D0F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18E3FFA5E8F99F3E8A5741DA /* Pods-LightMeUp!.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LightMeUp!.release.xcconfig"; path = "Pods/Target Support Files/Pods-LightMeUp!/Pods-LightMeUp!.release.xcconfig"; sourceTree = "<group>"; };
+		C36CC966001CDF70FAACF9A5 /* Pods-LightMeUp!.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LightMeUp!.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LightMeUp!/Pods-LightMeUp!.debug.xcconfig"; sourceTree = "<group>"; };
+		FC587904F8657E37EACA73FC /* Pods_LightMeUp_.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LightMeUp_.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D252522B57F84F456E0B5778 /* Pods_LightMeUp_.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +45,8 @@
 			children = (
 				17B8694B1E8440970032D0F0 /* LightMeUp! */,
 				17B8694A1E8440970032D0F0 /* Products */,
+				890898FD22583CD95FC92863 /* Pods */,
+				1DC194A0993A1D473A965987 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +71,23 @@
 			path = "LightMeUp!";
 			sourceTree = "<group>";
 		};
+		1DC194A0993A1D473A965987 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FC587904F8657E37EACA73FC /* Pods_LightMeUp_.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		890898FD22583CD95FC92863 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C36CC966001CDF70FAACF9A5 /* Pods-LightMeUp!.debug.xcconfig */,
+				18E3FFA5E8F99F3E8A5741DA /* Pods-LightMeUp!.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +95,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 17B8695B1E8440970032D0F0 /* Build configuration list for PBXNativeTarget "LightMeUp!" */;
 			buildPhases = (
+				A75566BEFEA0280AC3A0233C /* [CP] Check Pods Manifest.lock */,
 				17B869451E8440970032D0F0 /* Sources */,
 				17B869461E8440970032D0F0 /* Frameworks */,
 				17B869471E8440970032D0F0 /* Resources */,
+				D99B248489E2F5F54D105076 /* [CP] Embed Pods Frameworks */,
+				C8EA23C4E060893E9F53CE8B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -131,6 +158,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A75566BEFEA0280AC3A0233C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C8EA23C4E060893E9F53CE8B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LightMeUp!/Pods-LightMeUp!-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D99B248489E2F5F54D105076 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LightMeUp!/Pods-LightMeUp!-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		17B869451E8440970032D0F0 /* Sources */ = {
@@ -259,6 +334,7 @@
 		};
 		17B8695C1E8440970032D0F0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C36CC966001CDF70FAACF9A5 /* Pods-LightMeUp!.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 3DZ852B6GJ;
@@ -272,6 +348,7 @@
 		};
 		17B8695D1E8440970032D0F0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 18E3FFA5E8F99F3E8A5741DA /* Pods-LightMeUp!.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 3DZ852B6GJ;

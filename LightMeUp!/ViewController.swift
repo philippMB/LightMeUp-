@@ -60,9 +60,15 @@ class ViewController: UIViewController {
     @IBOutlet weak var Light30: UIImageView!
     @IBOutlet weak var Light31: UIImageView!
     
+    @IBOutlet weak var ColorSwitchView: UIView!
+    @IBOutlet weak var ColorSwitchImage: UIImageView!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        ColorSwitchView.isHidden = true
+        
         let client = TCPClient(address: "192.168.0.11", port: 23916)
         switch client.connect(timeout: 5){
         case .success:
@@ -113,9 +119,36 @@ class ViewController: UIViewController {
         Light31.image = UIImage(named: "Light")
     }
     
+    @IBAction func CancelButtonTapped(_ sender: UIButton) {
+        ColorSwitchView.isHidden = true ;
+    }
+    
+    @IBAction func DoneButtonTapped(_ sender: UIButton) {
+        ColorSwitchView.isHidden = true
+    }
+    
+    @IBAction func Light0LongPress(_ sender: UILongPressGestureRecognizer) {
+        print("Long Press")
+        //ColorSwitchView.alpha = 0.5
+        ColorSwitchView.backgroundColor = UIColor(white: 1, alpha: 0.4)
+        ColorSwitchImage.layer.shadowOpacity = 0.7
+        ColorSwitchImage.layer.shadowRadius = 20.0
+        
+        ColorSwitchView.isHidden = false
+
+    }
+    
     @IBAction func Light0Tapped(_ sender: UITapGestureRecognizer) {
         print("Recieved Tap")
         toggleLight(light: Light0)
+        
+        //let testFrame : CGRect = CGRect(x: 0, y: 200, width: 320, height: 200)
+        //let testView: UIImageView = UIImageView(frame: testFrame)
+        //testView.image = UIImage(named: "ColorSwitch")
+        //testView.alpha=0.5
+        //self.view.addSubview(testView)
+        
+        
     }
     
     @IBAction func Light1Tapped(_ sender: UITapGestureRecognizer) {

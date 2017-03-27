@@ -27,6 +27,7 @@
                                 <gestureRecognizers/>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="x5F-vw-BAJ" appends="YES" id="Drj-of-2Oy"/>
+                                    <outletCollection property="gestureRecognizers" destination="rUs-Zh-uRw" appends="YES" id="6td-Ao-MJK"/>
                                 </connections>
                             </imageView>
                             <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6eo-n1-gA7">
@@ -277,10 +278,41 @@
                                     <outletCollection property="gestureRecognizers" destination="pe3-Vz-S5J" appends="YES" id="b1g-BN-1tF"/>
                                 </connections>
                             </imageView>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Nij-WR-nV3">
+                                <rect key="frame" x="0.0" y="-4" width="667" height="382"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ColorSwitch" translatesAutoresizingMaskIntoConstraints="NO" id="5fk-SQ-yDR">
+                                        <rect key="frame" x="208" y="66" width="250" height="250"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yiC-1f-NJx">
+                                        <rect key="frame" x="21" y="329" width="60" height="34"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                        <state key="normal" title="Done"/>
+                                        <connections>
+                                            <action selector="DoneButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9ag-36-Jrp"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rcR-yN-hfs">
+                                        <rect key="frame" x="582" y="329" width="68" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                        <state key="normal" title="Cancel"/>
+                                        <connections>
+                                            <action selector="CancelButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aPg-mK-LP3"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="0.35766837285674791" green="0.37590071124536967" blue="0.4696621192893401" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <connections>
+                        <outlet property="ColorSwitchImage" destination="5fk-SQ-yDR" id="RTc-PY-aYB"/>
+                        <outlet property="ColorSwitchView" destination="Nij-WR-nV3" id="7xN-bG-5R0"/>
                         <outlet property="Light0" destination="b3b-sm-Rhk" id="CbK-Md-FGv"/>
                         <outlet property="Light1" destination="6eo-n1-gA7" id="gqj-2c-OTn"/>
                         <outlet property="Light10" destination="ShV-wS-fWV" id="SY8-dD-NOk"/>
@@ -476,7 +508,16 @@
                         <action selector="Light31Tapped:" destination="BYZ-38-t0r" id="ifY-kV-MKH"/>
                     </connections>
                 </tapGestureRecognizer>
+                <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="rUs-Zh-uRw" userLabel="Light0LongPressed">
+                    <connections>
+                        <action selector="Light0LongPress:" destination="BYZ-38-t0r" id="Ujd-to-oSI"/>
+                    </connections>
+                </pongPressGestureRecognizer>
             </objects>
+            <point key="canvasLocation" x="122.78860569715144" y="210.40000000000001"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="ColorSwitch" width="126" height="126"/>
+    </resources>
 </document>

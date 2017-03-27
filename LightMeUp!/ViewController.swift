@@ -11,6 +11,22 @@ import SwiftSocket
 
 class ViewController: UIViewController {
     
+    struct ledData {
+        var validData: Bool
+        var red: CUnsignedChar
+        var green: CUnsignedChar 
+        var blue: CUnsignedChar 
+        var brightness: CShort 
+        
+        init(valid: Bool, r: CUnsignedChar, g: CUnsignedChar, b: CUnsignedChar, br: CShort) {
+            self.validData = valid
+            self.red = r
+            self.green = g
+            self.blue = b
+            self.brightness = br
+        }
+    }
+    
     @IBOutlet weak var Light0: UIImageView!
     @IBOutlet weak var Light1: UIImageView!
     @IBOutlet weak var Light2: UIImageView!
@@ -51,6 +67,14 @@ class ViewController: UIViewController {
         switch client.connect(timeout: 5){
         case .success:
             print("Connected")
+            var dataRaw = ledData(valid: true, r: 255, g: 255, b: 255, br: 0)
+            let data = Data(buffer: UnsafeBufferPointer(start: &dataRaw, count: 1))
+            switch(client.send(data: data)){
+            case .success:
+                print("Sent data")
+            default:
+                print("Failed sending data")
+            }
         default:
             print("Could not connect to 23916")
         }

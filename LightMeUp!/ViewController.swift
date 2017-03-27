@@ -62,7 +62,7 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        print("What")
+
         let client = TCPClient(address: "192.168.0.11", port: 23916)
         switch client.connect(timeout: 5){
         case .success:

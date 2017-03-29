@@ -127,7 +127,7 @@ class ViewController: UIViewController {
         ColorSwitchView.isHidden = true
     }
     
-    @IBAction func Light0LongPress(_ sender: UILongPressGestureRecognizer) {
+    @IBAction func LightLongPress(_ sender: UILongPressGestureRecognizer) {
         print("Long Press")
         //ColorSwitchView.alpha = 0.5
         ColorSwitchView.backgroundColor = UIColor(white: 1, alpha: 0.4)
@@ -138,17 +138,11 @@ class ViewController: UIViewController {
 
     }
     
+    
+    
     @IBAction func Light0Tapped(_ sender: UITapGestureRecognizer) {
         print("Recieved Tap")
-        toggleLight(light: Light0)
-        
-        //let testFrame : CGRect = CGRect(x: 0, y: 200, width: 320, height: 200)
-        //let testView: UIImageView = UIImageView(frame: testFrame)
-        //testView.image = UIImage(named: "ColorSwitch")
-        //testView.alpha=0.5
-        //self.view.addSubview(testView)
-        
-        
+        toggleLight(light: Light0)         
     }
     
     @IBAction func Light1Tapped(_ sender: UITapGestureRecognizer) {

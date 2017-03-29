@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16E175b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E175b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="landscape">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -36,6 +36,7 @@
                                 <gestureRecognizers/>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="T8b-kV-FSD" appends="YES" id="7D9-Tl-AZx"/>
+                                    <outletCollection property="gestureRecognizers" destination="YrA-8K-hf3" appends="YES" id="JrX-kW-Qz1"/>
                                 </connections>
                             </imageView>
                             <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hj7-s8-Ggb">
@@ -44,6 +45,7 @@
                                 <gestureRecognizers/>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="qDp-L6-z9h" appends="YES" id="Mz0-a8-foi"/>
+                                    <outletCollection property="gestureRecognizers" destination="zRU-FU-zBf" appends="YES" id="IIY-Jj-x6B"/>
                                 </connections>
                             </imageView>
                             <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="V28-g6-OBX">
@@ -52,6 +54,7 @@
                                 <gestureRecognizers/>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="ia9-AF-Dp2" appends="YES" id="P9S-NX-78h"/>
+                                    <outletCollection property="gestureRecognizers" destination="el3-iE-3zA" appends="YES" id="v3t-rx-ATH"/>
                                 </connections>
                             </imageView>
                             <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hSi-jz-ouh">
@@ -60,6 +63,7 @@
                                 <gestureRecognizers/>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="DkJ-Sz-ZfL" appends="YES" id="vu3-Tq-KAp"/>
+                                    <outletCollection property="gestureRecognizers" destination="4Zj-GJ-Iy4" appends="YES" id="Loy-9s-j8I"/>
                                 </connections>
                             </imageView>
                             <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qo9-cz-GPR">
@@ -68,6 +72,7 @@
                                 <gestureRecognizers/>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="5Yx-Tv-fql" appends="YES" id="pP6-dl-WN1"/>
+                                    <outletCollection property="gestureRecognizers" destination="8qL-Xc-qDW" appends="YES" id="upj-Ig-hjm"/>
                                 </connections>
                             </imageView>
                             <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="S1y-IS-16f">
@@ -76,6 +81,7 @@
                                 <gestureRecognizers/>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="Xir-hY-DQA" appends="YES" id="ZvM-YX-OoO"/>
+                                    <outletCollection property="gestureRecognizers" destination="sok-Um-Pwb" appends="YES" id="uox-5U-YgF"/>
                                 </connections>
                             </imageView>
                             <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KPa-bb-wZm">
@@ -84,6 +90,7 @@
                                 <gestureRecognizers/>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="u0V-7u-ePY" appends="YES" id="o19-zn-Lw7"/>
+                                    <outletCollection property="gestureRecognizers" destination="vmf-Ia-haS" appends="YES" id="j8B-y5-1hI"/>
                                 </connections>
                             </imageView>
                             <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NWR-mC-rgb">
@@ -92,6 +99,7 @@
                                 <gestureRecognizers/>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="Jcv-b6-zfL" appends="YES" id="Pln-41-sZR"/>
+                                    <outletCollection property="gestureRecognizers" destination="eCr-A8-XOC" appends="YES" id="x4E-hp-p8e"/>
                                 </connections>
                             </imageView>
                             <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Cqp-Ld-nDl">
@@ -100,6 +108,7 @@
                                 <gestureRecognizers/>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="SjQ-Ek-EGo" appends="YES" id="5IT-3R-eBw"/>
+                                    <outletCollection property="gestureRecognizers" destination="nn2-AM-0lS" appends="YES" id="5xA-WR-Xcw"/>
                                 </connections>
                             </imageView>
                             <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ShV-wS-fWV">
@@ -108,6 +117,7 @@
                                 <gestureRecognizers/>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="UA1-em-d7e" appends="YES" id="df0-Hs-RNm"/>
+                                    <outletCollection property="gestureRecognizers" destination="Le6-g1-C4f" appends="YES" id="cMD-vN-gKA"/>
                                 </connections>
                             </imageView>
                             <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oIC-OB-ESy">
@@ -116,6 +126,7 @@
                                 <gestureRecognizers/>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="lXk-iI-cEb" appends="YES" id="gjG-4m-EA0"/>
+                                    <outletCollection property="gestureRecognizers" destination="BVH-xC-EET" appends="YES" id="YoE-sa-w7G"/>
                                 </connections>
                             </imageView>
                             <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0Bg-Gg-rwL">
@@ -124,6 +135,7 @@
                                 <gestureRecognizers/>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="aCx-CI-8JN" appends="YES" id="rI6-lk-5Mj"/>
+                                    <outletCollection property="gestureRecognizers" destination="aiw-an-Qh4" appends="YES" id="NWj-hY-Z2I"/>
                                 </connections>
                             </imageView>
                             <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ar5-fE-FgD">
@@ -132,6 +144,7 @@
                                 <gestureRecognizers/>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="8Us-bN-IE5" appends="YES" id="9VM-Jb-DaK"/>
+                                    <outletCollection property="gestureRecognizers" destination="83Z-Ta-SjI" appends="YES" id="KYe-h4-mvp"/>
                                 </connections>
                             </imageView>
                             <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zNe-1L-ADR">
@@ -140,6 +153,7 @@
                                 <gestureRecognizers/>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="TGI-7w-3SL" appends="YES" id="hEI-Y3-mZp"/>
+                                    <outletCollection property="gestureRecognizers" destination="7Sc-3r-Fdg" appends="YES" id="BaY-DM-LAV"/>
                                 </connections>
                             </imageView>
                             <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lNf-KS-6QF">
@@ -148,6 +162,7 @@
                                 <gestureRecognizers/>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="rH4-vv-hpU" appends="YES" id="V2A-bc-49f"/>
+                                    <outletCollection property="gestureRecognizers" destination="hMn-cd-ecE" appends="YES" id="sYh-2N-7RP"/>
                                 </connections>
                             </imageView>
                             <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9wP-xg-gh2">
@@ -156,6 +171,7 @@
                                 <gestureRecognizers/>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="5o8-F9-8Mc" appends="YES" id="1Pj-aG-dTf"/>
+                                    <outletCollection property="gestureRecognizers" destination="lPP-mB-67S" appends="YES" id="ozZ-aB-a3n"/>
                                 </connections>
                             </imageView>
                             <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OGV-wC-zyn">
@@ -164,6 +180,7 @@
                                 <gestureRecognizers/>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="dDO-kk-Ftm" appends="YES" id="zI0-aO-bAY"/>
+                                    <outletCollection property="gestureRecognizers" destination="xYc-qc-0jG" appends="YES" id="1V0-rc-GCH"/>
                                 </connections>
                             </imageView>
                             <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="09u-6v-9xW">
@@ -172,6 +189,7 @@
                                 <gestureRecognizers/>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="RPm-qr-6H3" appends="YES" id="2Vw-sG-xbW"/>
+                                    <outletCollection property="gestureRecognizers" destination="fvA-rB-cyy" appends="YES" id="3uB-IE-TrZ"/>
                                 </connections>
                             </imageView>
                             <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eOc-6p-V3W">
@@ -180,6 +198,7 @@
                                 <gestureRecognizers/>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="ybX-44-PrL" appends="YES" id="jBq-P5-ei5"/>
+                                    <outletCollection property="gestureRecognizers" destination="DcZ-Vg-kjS" appends="YES" id="CHS-9k-hyJ"/>
                                 </connections>
                             </imageView>
                             <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tXQ-LI-1i3">
@@ -188,6 +207,7 @@
                                 <gestureRecognizers/>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="YQa-mh-k7M" appends="YES" id="O5w-M7-6TV"/>
+                                    <outletCollection property="gestureRecognizers" destination="qYA-h0-vjp" appends="YES" id="ZYk-La-dMr"/>
                                 </connections>
                             </imageView>
                             <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="O92-Oo-424">
@@ -196,6 +216,7 @@
                                 <gestureRecognizers/>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="d3B-e2-e5q" appends="YES" id="azj-EY-rvS"/>
+                                    <outletCollection property="gestureRecognizers" destination="gXF-GB-whE" appends="YES" id="936-NY-TpH"/>
                                 </connections>
                             </imageView>
                             <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pbl-Gm-a4l">
@@ -204,6 +225,7 @@
                                 <gestureRecognizers/>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="FS1-Ic-b5I" appends="YES" id="Fgo-RY-ZFf"/>
+                                    <outletCollection property="gestureRecognizers" destination="ql2-Vc-Sx3" appends="YES" id="szD-PX-vfo"/>
                                 </connections>
                             </imageView>
                             <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="voF-HZ-8Av">
@@ -212,6 +234,7 @@
                                 <gestureRecognizers/>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="zCU-Kf-JyP" appends="YES" id="EuQ-1m-nY4"/>
+                                    <outletCollection property="gestureRecognizers" destination="F9U-kD-Uxk" appends="YES" id="fMg-Ym-rRk"/>
                                 </connections>
                             </imageView>
                             <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vLA-7K-GDP">
@@ -220,6 +243,7 @@
                                 <gestureRecognizers/>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="EiL-Nm-JSA" appends="YES" id="HHz-Lc-DIZ"/>
+                                    <outletCollection property="gestureRecognizers" destination="iH8-Qk-7mX" appends="YES" id="Ylh-MA-y3t"/>
                                 </connections>
                             </imageView>
                             <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Dkr-6s-P0y">
@@ -228,6 +252,7 @@
                                 <gestureRecognizers/>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="Bbu-dz-aps" appends="YES" id="VID-bt-jVe"/>
+                                    <outletCollection property="gestureRecognizers" destination="bZs-9i-VMB" appends="YES" id="dXR-fm-ys0"/>
                                 </connections>
                             </imageView>
                             <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KL2-VL-4Wd">
@@ -236,6 +261,7 @@
                                 <gestureRecognizers/>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="b2a-eg-4Tg" appends="YES" id="lUl-Sl-3rM"/>
+                                    <outletCollection property="gestureRecognizers" destination="p6d-4z-uM3" appends="YES" id="min-Tn-pVg"/>
                                 </connections>
                             </imageView>
                             <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ge6-HM-EPx">
@@ -244,6 +270,7 @@
                                 <gestureRecognizers/>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="NNB-Sr-qkd" appends="YES" id="U4Q-hW-gMQ"/>
+                                    <outletCollection property="gestureRecognizers" destination="lps-53-K1b" appends="YES" id="XZj-Nj-bwY"/>
                                 </connections>
                             </imageView>
                             <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3PU-20-IyR">
@@ -252,6 +279,7 @@
                                 <gestureRecognizers/>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="Mdp-Vc-eHu" appends="YES" id="5cB-ah-7x1"/>
+                                    <outletCollection property="gestureRecognizers" destination="jhN-tB-LIc" appends="YES" id="DnT-wS-9ED"/>
                                 </connections>
                             </imageView>
                             <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="auE-AD-dMn">
@@ -260,6 +288,7 @@
                                 <gestureRecognizers/>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="il5-eW-kQs" appends="YES" id="FsY-td-WpY"/>
+                                    <outletCollection property="gestureRecognizers" destination="hfr-K0-us3" appends="YES" id="UkX-3F-Tkp"/>
                                 </connections>
                             </imageView>
                             <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zuR-1z-SWy">
@@ -268,6 +297,7 @@
                                 <gestureRecognizers/>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="2e0-ab-HUb" appends="YES" id="bYW-vS-Txu"/>
+                                    <outletCollection property="gestureRecognizers" destination="ULy-Ew-Km1" appends="YES" id="kVm-B9-viq"/>
                                 </connections>
                             </imageView>
                             <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="M3e-74-8re">
@@ -276,6 +306,7 @@
                                 <gestureRecognizers/>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="pe3-Vz-S5J" appends="YES" id="b1g-BN-1tF"/>
+                                    <outletCollection property="gestureRecognizers" destination="pyo-eJ-jt2" appends="YES" id="E6N-jm-2uL"/>
                                 </connections>
                             </imageView>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Nij-WR-nV3">
@@ -510,7 +541,162 @@
                 </tapGestureRecognizer>
                 <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="rUs-Zh-uRw" userLabel="Light0LongPressed">
                     <connections>
-                        <action selector="Light0LongPress:" destination="BYZ-38-t0r" id="Ujd-to-oSI"/>
+                        <action selector="LightLongPress:" destination="BYZ-38-t0r" id="WwM-6n-1MO"/>
+                    </connections>
+                </pongPressGestureRecognizer>
+                <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="YrA-8K-hf3" userLabel="Light1LongPressed">
+                    <connections>
+                        <action selector="LightLongPress:" destination="BYZ-38-t0r" id="5QL-hO-44Z"/>
+                    </connections>
+                </pongPressGestureRecognizer>
+                <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="zRU-FU-zBf" userLabel="Light2LongPressed">
+                    <connections>
+                        <action selector="LightLongPress:" destination="BYZ-38-t0r" id="9Ga-1V-rZB"/>
+                    </connections>
+                </pongPressGestureRecognizer>
+                <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="el3-iE-3zA" userLabel="Light3LongPressed">
+                    <connections>
+                        <action selector="LightLongPress:" destination="BYZ-38-t0r" id="U7T-Cs-rqk"/>
+                    </connections>
+                </pongPressGestureRecognizer>
+                <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="4Zj-GJ-Iy4" userLabel="Light4LongPressed">
+                    <connections>
+                        <action selector="LightLongPress:" destination="BYZ-38-t0r" id="zTh-ok-VfT"/>
+                    </connections>
+                </pongPressGestureRecognizer>
+                <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="8qL-Xc-qDW" userLabel="Light5LongPressed">
+                    <connections>
+                        <action selector="LightLongPress:" destination="BYZ-38-t0r" id="h29-jL-mcX"/>
+                    </connections>
+                </pongPressGestureRecognizer>
+                <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="sok-Um-Pwb" userLabel="Light6LongPressed">
+                    <connections>
+                        <action selector="LightLongPress:" destination="BYZ-38-t0r" id="XxJ-A2-s2x"/>
+                    </connections>
+                </pongPressGestureRecognizer>
+                <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="vmf-Ia-haS" userLabel="Light7LongPressed">
+                    <connections>
+                        <action selector="LightLongPress:" destination="BYZ-38-t0r" id="34C-dj-dbJ"/>
+                    </connections>
+                </pongPressGestureRecognizer>
+                <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="eCr-A8-XOC" userLabel="Light8LongPressed">
+                    <connections>
+                        <action selector="LightLongPress:" destination="BYZ-38-t0r" id="YfK-Id-Imp"/>
+                    </connections>
+                </pongPressGestureRecognizer>
+                <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="nn2-AM-0lS" userLabel="Light9LongPressed">
+                    <connections>
+                        <action selector="LightLongPress:" destination="BYZ-38-t0r" id="waH-IY-Ac9"/>
+                    </connections>
+                </pongPressGestureRecognizer>
+                <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="Le6-g1-C4f" userLabel="Light10LongPressed">
+                    <connections>
+                        <action selector="LightLongPress:" destination="BYZ-38-t0r" id="YVc-H4-y5A"/>
+                    </connections>
+                </pongPressGestureRecognizer>
+                <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="BVH-xC-EET" userLabel="Light11LongPressed">
+                    <connections>
+                        <action selector="LightLongPress:" destination="BYZ-38-t0r" id="7IA-7s-VwC"/>
+                    </connections>
+                </pongPressGestureRecognizer>
+                <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="aiw-an-Qh4" userLabel="Light12LongPressed">
+                    <connections>
+                        <action selector="LightLongPress:" destination="BYZ-38-t0r" id="dfe-ba-jj8"/>
+                    </connections>
+                </pongPressGestureRecognizer>
+                <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="83Z-Ta-SjI" userLabel="Light13LongPressed">
+                    <connections>
+                        <action selector="LightLongPress:" destination="BYZ-38-t0r" id="zFg-90-m7i"/>
+                    </connections>
+                </pongPressGestureRecognizer>
+                <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="7Sc-3r-Fdg" userLabel="Light14LongPressed">
+                    <connections>
+                        <action selector="LightLongPress:" destination="BYZ-38-t0r" id="FBt-bC-cv3"/>
+                    </connections>
+                </pongPressGestureRecognizer>
+                <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="hMn-cd-ecE" userLabel="Light15LongPressed">
+                    <connections>
+                        <action selector="LightLongPress:" destination="BYZ-38-t0r" id="fPi-pG-X4H"/>
+                    </connections>
+                </pongPressGestureRecognizer>
+                <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="lPP-mB-67S" userLabel="Light16LongPressed">
+                    <connections>
+                        <action selector="LightLongPress:" destination="BYZ-38-t0r" id="trv-Cu-Qmp"/>
+                    </connections>
+                </pongPressGestureRecognizer>
+                <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="xYc-qc-0jG" userLabel="Light17LongPressed">
+                    <connections>
+                        <action selector="LightLongPress:" destination="BYZ-38-t0r" id="uAf-hr-0gz"/>
+                    </connections>
+                </pongPressGestureRecognizer>
+                <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="fvA-rB-cyy" userLabel="Light18LongPressed">
+                    <connections>
+                        <action selector="LightLongPress:" destination="BYZ-38-t0r" id="WHG-9u-jqj"/>
+                    </connections>
+                </pongPressGestureRecognizer>
+                <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="DcZ-Vg-kjS" userLabel="Light19LongPressed">
+                    <connections>
+                        <action selector="LightLongPress:" destination="BYZ-38-t0r" id="Yyu-RC-yDk"/>
+                    </connections>
+                </pongPressGestureRecognizer>
+                <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="qYA-h0-vjp" userLabel="Light20LongPressed">
+                    <connections>
+                        <action selector="LightLongPress:" destination="BYZ-38-t0r" id="5eH-hk-e2c"/>
+                    </connections>
+                </pongPressGestureRecognizer>
+                <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="gXF-GB-whE" userLabel="Light21LongPressed">
+                    <connections>
+                        <action selector="LightLongPress:" destination="BYZ-38-t0r" id="304-42-s8a"/>
+                    </connections>
+                </pongPressGestureRecognizer>
+                <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="ql2-Vc-Sx3" userLabel="Light22LongPressed">
+                    <connections>
+                        <action selector="LightLongPress:" destination="BYZ-38-t0r" id="fct-Sa-f99"/>
+                    </connections>
+                </pongPressGestureRecognizer>
+                <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="F9U-kD-Uxk" userLabel="Light23LongPressed">
+                    <connections>
+                        <action selector="LightLongPress:" destination="BYZ-38-t0r" id="Pa0-uf-8x9"/>
+                    </connections>
+                </pongPressGestureRecognizer>
+                <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="iH8-Qk-7mX" userLabel="Light24LongPressed">
+                    <connections>
+                        <action selector="LightLongPress:" destination="BYZ-38-t0r" id="00U-fb-Bb5"/>
+                    </connections>
+                </pongPressGestureRecognizer>
+                <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="bZs-9i-VMB" userLabel="Light25LongPressed">
+                    <connections>
+                        <action selector="LightLongPress:" destination="BYZ-38-t0r" id="rLe-PF-DCM"/>
+                    </connections>
+                </pongPressGestureRecognizer>
+                <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="p6d-4z-uM3" userLabel="Light26LongPressed">
+                    <connections>
+                        <action selector="LightLongPress:" destination="BYZ-38-t0r" id="OOc-b7-6LY"/>
+                    </connections>
+                </pongPressGestureRecognizer>
+                <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="lps-53-K1b" userLabel="Light27LongPressed">
+                    <connections>
+                        <action selector="LightLongPress:" destination="BYZ-38-t0r" id="E5F-Cr-GCg"/>
+                    </connections>
+                </pongPressGestureRecognizer>
+                <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="jhN-tB-LIc" userLabel="Light28LongPressed">
+                    <connections>
+                        <action selector="LightLongPress:" destination="BYZ-38-t0r" id="gRc-E2-2X8"/>
+                    </connections>
+                </pongPressGestureRecognizer>
+                <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="hfr-K0-us3" userLabel="Light29LongPressed">
+                    <connections>
+                        <action selector="LightLongPress:" destination="BYZ-38-t0r" id="AH1-z4-CiN"/>
+                    </connections>
+                </pongPressGestureRecognizer>
+                <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="ULy-Ew-Km1" userLabel="Light30LongPressed">
+                    <connections>
+                        <action selector="LightLongPress:" destination="BYZ-38-t0r" id="Xh8-NN-aDL"/>
+                    </connections>
+                </pongPressGestureRecognizer>
+                <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="pyo-eJ-jt2" userLabel="Light31LongPressed">
+                    <connections>
+                        <action selector="LightLongPress:" destination="BYZ-38-t0r" id="ulB-vf-Lb4"/>
                     </connections>
                 </pongPressGestureRecognizer>
             </objects>
@@ -518,6 +704,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="ColorSwitch" width="126" height="126"/>
+        <image name="ColorSwitch" width="134" height="134"/>
     </resources>
 </document>

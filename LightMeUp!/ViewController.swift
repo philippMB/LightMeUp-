@@ -11,22 +11,6 @@ import SwiftSocket
 
 class ViewController: UIViewController {
     
-    struct ledData {
-        var validData: Bool
-        var red: CUnsignedChar
-        var green: CUnsignedChar 
-        var blue: CUnsignedChar 
-        var brightness: CShort 
-        
-        init(valid: Bool, r: CUnsignedChar, g: CUnsignedChar, b: CUnsignedChar, br: CShort) {
-            self.validData = valid
-            self.red = r
-            self.green = g
-            self.blue = b
-            self.brightness = br
-        }
-    }
-    
     @IBOutlet weak var Light0: UIImageView!
     @IBOutlet weak var Light1: UIImageView!
     @IBOutlet weak var Light2: UIImageView!
@@ -137,8 +121,6 @@ class ViewController: UIViewController {
         ColorSwitchView.isHidden = false
 
     }
-    
-    
     
     @IBAction func Light0Tapped(_ sender: UITapGestureRecognizer) {
         print("Recieved Tap")

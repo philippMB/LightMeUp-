@@ -313,10 +313,6 @@
                                 <rect key="frame" x="0.0" y="-4" width="667" height="382"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ColorSwitch" translatesAutoresizingMaskIntoConstraints="NO" id="5fk-SQ-yDR">
-                                        <rect key="frame" x="208" y="66" width="250" height="250"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    </imageView>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yiC-1f-NJx">
                                         <rect key="frame" x="21" y="329" width="60" height="34"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -335,6 +331,14 @@
                                             <action selector="CancelButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aPg-mK-LP3"/>
                                         </connections>
                                     </button>
+                                    <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ColorSwitch" translatesAutoresizingMaskIntoConstraints="NO" id="5fk-SQ-yDR">
+                                        <rect key="frame" x="208" y="66" width="250" height="250"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <gestureRecognizers/>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="wiM-PE-PqM" appends="YES" id="g2f-qg-kq3"/>
+                                        </connections>
+                                    </imageView>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
@@ -699,6 +703,11 @@
                         <action selector="LightLongPress:" destination="BYZ-38-t0r" id="ulB-vf-Lb4"/>
                     </connections>
                 </pongPressGestureRecognizer>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="wiM-PE-PqM">
+                    <connections>
+                        <action selector="colorRecognizer:" destination="BYZ-38-t0r" id="scS-ju-cZi"/>
+                    </connections>
+                </panGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="122.78860569715144" y="210.40000000000001"/>
         </scene>

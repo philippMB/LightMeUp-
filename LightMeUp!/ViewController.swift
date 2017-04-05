@@ -223,6 +223,50 @@ class ViewController: UIViewController {
         toggleLight(light: Light31)
     }
     
+    @IBAction func colorRecognizer(_ sender: UIPanGestureRecognizer) {
+        let position = sender.location(in: ColorSwitchView)
+        let x = position.x - ColorSwitchView.center.x
+        let y = position.y - ColorSwitchView.center.y
+        
+        let sgnGreen0 = copysign(1.0, ((-180.0 - y)*(250.0 - x) - (180.0 - y)*(330.0 - x)))
+        let sgnGreen1 = copysign(1.0, ((0.0 - y)*(330.0 - x) - (-180.0 - y)*(0.0 - x)))
+        let sgnGreen2 = copysign(1.0, ((180.0 - y)*(0.0 - x) - (0.0 - y)*(250.0 - x)))
+        
+        let sgnRed0 = copysign(1.0, ((-180.0 - y)*(-260.0 - x) - (-180.0 - y)*(330.0 - x)))
+        let sgnRed1 = copysign(1.0, ((0.0 - y)*(330.0 - x) - (-180.0 - y)*(0.0 - x)))
+        let sgnRed2 = copysign(1.0, ((-180.0 - y)*(0.0 - x) - (0.0 - y)*(-260.0 - x)))
+        
+        let sgnBlue0 = copysign(1.0, ((180.0 - y)*(-260.0 - x) - (-180.0 - y)*(-230.0 - x)))
+        let sgnBlue1 = copysign(1.0, ((0.0 - y)*(-230.0 - x) - (180.0 - y)*(0.0 - x)))
+        let sgnBlue2 = copysign(1.0, ((-180.0 - y)*(0.0 - x) - (0.0 - y)*(-260.0 - x)))
+        
+        let sgnBrightness0 = copysign(1.0, ((180.0 - y)*(250.0 - x) - (180.0 - y)*(-230.0 - x)))
+        let sgnBrightness1 = copysign(1.0, ((0.0 - y)*(-230.0 - x) - (180.0 - y)*(0.0 - x)))
+        let sgnBrightness2 = copysign(1.0, ((180.0 - y)*(0.0 - x) - (0.0 - y)*(250.0 - x)))
+//        print("\(position.x - ColorSwitchView.center.x, position.y - ColorSwitchView.center.y)")
+//        print("First: \((180.0 - y)*(250.0 - x) - (180.0 - y)*(-230.0 - x))")
+//        print("Second: \((0.0 - y)*(-230.0 - x) - (180.0 - y)*(0.0 - x))")
+//        print("Third: \((180.0 - y)*(0.0 - x) - (0.0 - y)*(250.0 - x))") 
+        if (sgnGreen0, sgnGreen1) == (sgnGreen1 ,sgnGreen2) {
+            print("Green") ;
+            print("\((position.x - ColorSwitchView.center.x)*100/270)")
+        }
+        else if (sgnRed0, sgnRed1) == ( sgnRed1, sgnRed2) {
+            print("Red")
+            print("\((position.y - ColorSwitchView.center.y)*100/(-170))")
+        }
+        else if (sgnBlue0, sgnBlue1) == (sgnBlue1, sgnBlue2) {
+            print("Blue")
+            print("\((position.x - ColorSwitchView.center.x)*100/(-240))")
+        }
+        else if (sgnBrightness0, sgnBrightness1) == (sgnBrightness1, sgnBrightness2) {
+            print("Black")
+            print("\((position.y - ColorSwitchView.center.y)*100/175)")
+        }
+    
+}
+    
+    
     
     func toggleLight(light: UIImageView) -> Void{
         if light.image == UIImage(named: "LightYellow") {

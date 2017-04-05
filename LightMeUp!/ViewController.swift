@@ -47,13 +47,13 @@ class ViewController: UIViewController {
     @IBOutlet weak var ColorSwitchView: UIView!
     @IBOutlet weak var ColorSwitchImage: UIImageView!
     
-    
+    let client = TCPClient(address: "192.168.0.11", port: 23916)
+        
     override func viewDidLoad() {
         super.viewDidLoad()
         
         ColorSwitchView.isHidden = true
         
-        let client = TCPClient(address: "192.168.0.11", port: 23916)
         switch client.connect(timeout: 5){
         case .success:
             print("Connected")
@@ -68,6 +68,7 @@ class ViewController: UIViewController {
         default:
             print("Could not connect to 23916")
         }
+
         
         Light0.image = UIImage(named: "Light")
         Light1.image = UIImage(named: "Light")
@@ -250,14 +251,40 @@ class ViewController: UIViewController {
         if (sgnGreen0, sgnGreen1) == (sgnGreen1 ,sgnGreen2) {
             print("Green") ;
             print("\((position.x - ColorSwitchView.center.x)*100/270)")
+            var dataRaw = ledData(valid: true, r: 0, g: (CUnsignedChar(((position.x - ColorSwitchView.center.x)*100/(330)))), b: 0, br: 0)
+            let data = Data(buffer: UnsafeBufferPointer(start: &dataRaw, count: 1))
+            switch(client.send(data: data)){
+            case .success:
+                print("Sent data")
+            default:
+                print("Failed sending data")
+            }
+
         }
         else if (sgnRed0, sgnRed1) == ( sgnRed1, sgnRed2) {
             print("Red")
             print("\((position.y - ColorSwitchView.center.y)*100/(-170))")
+            var dataRaw = ledData(valid: true, r: (CUnsignedChar(((position.y - ColorSwitchView.center.y)*100/(-180)))), g: 0, b: 0, br: 0)
+            let data = Data(buffer: UnsafeBufferPointer(start: &dataRaw, count: 1))
+            switch(client.send(data: data)){
+            case .success:
+                print("Sent data")
+            default:
+                print("Failed sending data")
+            }
         }
         else if (sgnBlue0, sgnBlue1) == (sgnBlue1, sgnBlue2) {
             print("Blue")
             print("\((position.x - ColorSwitchView.center.x)*100/(-240))")
+            var dataRaw = ledData(valid: true, r: 0, g: 0, b: (CUnsignedChar(((position.x - ColorSwitchView.center.x)*100/(-260)))), br: 0)
+            let data = Data(buffer: UnsafeBufferPointer(start: &dataRaw, count: 1))
+            switch(client.send(data: data)){
+            case .success:
+                print("Sent data")
+            default:
+                print("Failed sending data")
+            }
+
         }
         else if (sgnBrightness0, sgnBrightness1) == (sgnBrightness1, sgnBrightness2) {
             print("Black")

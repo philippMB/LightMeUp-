@@ -14,12 +14,15 @@ struct ledData {
     var green: CUnsignedChar 
     var blue: CUnsignedChar 
     var brightness: CShort 
+    var ledNr: CShort
     
-    init(valid: Bool, r: CUnsignedChar, g: CUnsignedChar, b: CUnsignedChar, br: CShort) {
+    
+    init(valid: Bool, r: CUnsignedChar, g: CUnsignedChar, b: CUnsignedChar, br: CShort, ledNr: CShort) {
         self.validData = valid
         self.red = r
         self.green = g
         self.blue = b
         self.brightness = br
+        self.ledNr = ledNr
     }
 }

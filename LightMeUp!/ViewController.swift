@@ -146,20 +146,68 @@ class ViewController: UIViewController {
     @IBAction func Light1Tapped(_ sender: UITapGestureRecognizer) {
         print("Recieved 2")
         toggleLight(light: Light1)
-        //leds.ledNr.append(1)
+        
+        dataRaw.ledNr = 1 ;
+        data = Data(buffer: UnsafeBufferPointer(start: &dataRaw, count: 1))
+        switch(client.send(data: data!)){
+        case .success:
+            print("Sent data")
+        default:
+            print("Failed sending data")
+        }
     }
     @IBAction func Light2Tapped(_ sender: UITapGestureRecognizer) {
         toggleLight(light: Light2)
+        
+        dataRaw.ledNr = 2 ;
+        data = Data(buffer: UnsafeBufferPointer(start: &dataRaw, count: 1))
+        switch(client.send(data: data!)){
+        case .success:
+            print("Sent data")
+        default:
+            print("Failed sending data")
+        }
+
     }
     @IBAction func Light3Tapped(_ sender: UITapGestureRecognizer) {
         toggleLight(light: Light3)
+        
+        dataRaw.ledNr = 3 ;
+        data = Data(buffer: UnsafeBufferPointer(start: &dataRaw, count: 1))
+        switch(client.send(data: data!)){
+        case .success:
+            print("Sent data")
+        default:
+            print("Failed sending data")
+        }
+
     }
     @IBAction func Light4Tapped(_ sender: UITapGestureRecognizer) {
         toggleLight(light: Light4)
+        
+        dataRaw.ledNr = 4 ;
+        data = Data(buffer: UnsafeBufferPointer(start: &dataRaw, count: 1))
+        switch(client.send(data: data!)){
+        case .success:
+            print("Sent data")
+        default:
+            print("Failed sending data")
+        }
+
     }
     @IBAction func Light5Tapped(_ sender: UITapGestureRecognizer) {
         print("Tapped")
         toggleLight(light: Light5)
+        
+        dataRaw.ledNr = 5 ;
+        data = Data(buffer: UnsafeBufferPointer(start: &dataRaw, count: 1))
+        switch(client.send(data: data!)){
+        case .success:
+            print("Sent data")
+        default:
+            print("Failed sending data")
+        }
+
     }
     @IBAction func Light6Tapped(_ sender: UITapGestureRecognizer) {
         toggleLight(light: Light6)
